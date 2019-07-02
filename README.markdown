@@ -48,6 +48,7 @@ Our overarching goals are clarity, consistency and brevity, in that order.
 * [Parentheses](#parentheses)
 * [Multi-line String Literals](#multi-line-string-literals)
 * [No Emoji](#no-emoji)
+* [Acronyms Capitalization](#acronyms-capitalization)
 * [Organization and Bundle Identifier](#organization-and-bundle-identifier)
 * [Copyright Statement](#copyright-statement)
 * [Smiley Face](#smiley-face)
@@ -1051,6 +1052,61 @@ let message = "You cannot charge the flux " +
 ## No Emoji
 
 Do not use emoji in your projects. For those readers who actually type in their code, it's an unnecessary source of friction. While it may be cute, it doesn't add to the learning and it interrupts the coding flow for these readers.
+
+## Acronyms Capitalization
+
+[Acronyms](https://en.wikipedia.org/wiki/Acronym) must be capitalized such that all of its characters are uppercase, unless the acronym goes at the beginning of a name, in which case, all of its characters will be lowercased.
+
+> Be aware of words that aren't acronyms (and do **not** follow this rule), for instance:
+ - [Apocopes](https://en.wikipedia.org/wiki/Apocope).
+ 	- Exception: `ID` is a form of initialism, which, per standardized Swift convention, uses the same case — the only two forms to use are `id` and `ID`.
+ - Words that have been originated as acronyms, but are considered words in dictionaries nowadays, for instance: *laser*.
+
+> Examples of words that are acronyms are:
+- URL, HTTP, SATA, USB, REST, CRUD, etc.
+
+##### Example
+Good
+```swift
+func pathForURL(url: NSURL) -> String 
+// First 'URL' appearance goes UPPERCASE. 
+// Second appearance goes lowercase, since it's at the beggining of a non-static constant name.
+
+func urlForPath(path: String) -> NSURL	
+// 'URL' goes at the beggining of the function name, use lowercase.
+
+let urlForConnections: NSURL 
+// 'URL' goes at the beggining of a non-static constant name, use lowercase.
+
+let baseURL: NSURL
+// 'URL' isn't at the beggining of a non-static constant name, use UPPERCASE.
+
+static let URL = NSURL(string: "http://www.google.com/")
+// Particular scenario: URL can go all UPPERCASE in this case because it's about a static constant, which should start with Uppercase.
+
+let id = object.objectID
+// Per standard Swift convention, apply variables capitalization rule.
+```
+
+Bad
+```swift
+func pathForUrl(URL: NSURL) -> String 
+// First appearance: Wrong. You should never see such camel case scenario ('Url').
+// Second appearance: Wrong. Constants should start with Uppercase only if they are static.
+
+func URLForPath(path: String) -> NSURL	
+// 'URL' goes at the beggining of a function name, it should go lowercase.
+
+let URLForConnections: NSURL 
+// 'URL' goes at the beggining of a non-static constant name, it should go lowercase.
+
+let baseUrl: NSURL
+// Wrong. You should never see such camel case scenario ('Url').
+
+let objectId = object.objectID
+// Wrong. Treat `id` as you would an acronym.
+```
+
 
 ## Organization and Bundle Identifier
 
