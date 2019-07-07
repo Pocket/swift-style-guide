@@ -1055,7 +1055,7 @@ Do not use emoji in your projects. For those readers who actually type in their 
 
 ## Acronyms Capitalization
 
-[Acronyms](https://en.wikipedia.org/wiki/Acronym) must be capitalized such that all of its characters are uppercase, unless the acronym goes at the beginning of a name, in which case, all of its characters will be lowercased.
+[Acronyms](https://en.wikipedia.org/wiki/Acronym) must be capitalized such that all of its characters are uppercase, unless the acronym goes at the beginning of a name, in which case, all of its characters will be lowercased. See, also, [Naming](#naming).
 
 > Be aware of words that aren't acronyms (and do **not** follow this rule), for instance:
  - [Apocopes](https://en.wikipedia.org/wiki/Apocope).
