@@ -1070,16 +1070,16 @@ Good
 ```swift
 func pathForURL(url: NSURL) -> String 
 // First 'URL' appearance goes UPPERCASE. 
-// Second appearance goes lowercase, since it's at the beggining of a non-static constant name.
+// Second appearance goes lowercase, since it's at the beginning of a non-static constant name.
 
 func urlForPath(path: String) -> NSURL	
-// 'URL' goes at the beggining of the function name, use lowercase.
+// 'URL' goes at the beginning of the function name, use lowercase.
 
 let urlForConnections: NSURL 
-// 'URL' goes at the beggining of a non-static constant name, use lowercase.
+// 'URL' goes at the beginning of a non-static constant name, use lowercase.
 
 let baseURL: NSURL
-// 'URL' isn't at the beggining of a non-static constant name, use UPPERCASE.
+// 'URL' isn't at the beginning of a non-static constant name, use UPPERCASE.
 
 static let URL = NSURL(string: "http://www.google.com/")
 // Particular scenario: URL can go all UPPERCASE in this case because it's about a static constant, which should start with Uppercase.
@@ -1095,10 +1095,10 @@ func pathForUrl(URL: NSURL) -> String
 // Second appearance: Wrong. Constants should start with Uppercase only if they are static.
 
 func URLForPath(path: String) -> NSURL	
-// 'URL' goes at the beggining of a function name, it should go lowercase.
+// 'URL' goes at the beginning of a function name, it should go lowercase.
 
 let URLForConnections: NSURL 
-// 'URL' goes at the beggining of a non-static constant name, it should go lowercase.
+// 'URL' goes at the beginning of a non-static constant name, it should go lowercase.
 
 let baseUrl: NSURL
 // Wrong. You should never see such camel case scenario ('Url').
