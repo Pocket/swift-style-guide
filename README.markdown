@@ -1060,11 +1060,11 @@ Where an Xcode project is involved, the organization should be set to `Ray Wende
 
 ## Copyright Statement
 
-The following copyright statement should be included at the top of every source
+The [following copyright statement](LICENSE.pkt) should be included at the top of every source
 file:
 
 ```swift
-/// Copyright (c) 2019 Razeware LLC
+/// Copyright 2012-2019 Read It Later, Inc.
 /// 
 /// Permission is hereby granted, free of charge, to any person obtaining a copy
 /// of this software and associated documentation files (the "Software"), to deal
@@ -1075,14 +1075,6 @@ file:
 /// 
 /// The above copyright notice and this permission notice shall be included in
 /// all copies or substantial portions of the Software.
-/// 
-/// Notwithstanding the foregoing, you may not use, copy, modify, merge, publish,
-/// distribute, sublicense, create a derivative work, and/or sell copies of the
-/// Software in any work that is designed, intended, or marketed for pedagogical or
-/// instructional purposes related to programming, coding, application development,
-/// or information technology.  Permission for such use, copying, modification,
-/// merger, publication, distribution, sublicensing, creation of derivative works,
-/// or sale is expressly withheld.
 /// 
 /// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 /// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
